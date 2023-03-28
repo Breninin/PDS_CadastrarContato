@@ -1,0 +1,30 @@
+﻿<Window x:Class="CadastrarContato.Formularios.JanelaCadastrarContato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastrarContato.Formularios"
+        mc:Ignorable="d"
+        Title="Cadastrar Contato" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Cadastrar Contato" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="36" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="51" Width="324"/>
+        <Label Content="Nome:" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="28" Width="60"/>
+        <TextBox x:Name="edNome" HorizontalAlignment="Center" Margin="0,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Background="#FFDEDEDE" Height="25" FontSize="16" Grid.RowSpan="2"/>
+        <Label Content="Sexo:" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="28" Width="54"/>
+        <TextBox x:Name="edSexo" HorizontalAlignment="Center" Margin="0,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Background="#FFDEDEDE" Height="25" FontSize="16" Grid.RowSpan="2"/>
+        <Label Content="Email:" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="28" Width="58"/>
+        <TextBox x:Name="edEmail" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Background="#FFDEDEDE" Height="25" FontSize="16" Grid.RowSpan="2"/>
+        <Label Content="Telefone:" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="28" Width="80"/>
+        <TextBox x:Name="edTelefone" HorizontalAlignment="Center" Margin="0,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Background="#FFDEDEDE" Height="25" FontSize="16" Grid.RowSpan="2"/>
+        <Label Content="Nascimento:" HorizontalAlignment="Center" Margin="0,298,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Height="28" Width="106"/>
+        <DatePicker x:Name="dtNascimento" HorizontalAlignment="Center" Margin="0,331,0,0" VerticalAlignment="Top" Width="780" FontSize="16" Grid.RowSpan="2" Height="29"/>
+        <Button x:Name="btCancelar" Content="Cancelar" HorizontalAlignment="Center" Margin="0,369,620,0" VerticalAlignment="Top" Height="55" Width="156" FontSize="20" FontWeight="Bold" Click="btCancelar_Click" Grid.RowSpan="2"/>
+        <Button x:Name="btSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="620,369,0,0" VerticalAlignment="Top" Height="55" Width="155" FontSize="20" FontWeight="Bold" Click="btSalvar_Click" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

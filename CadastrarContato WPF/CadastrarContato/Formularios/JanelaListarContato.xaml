@@ -1,0 +1,21 @@
+﻿<Window x:Class="CadastrarContato.Formularios.JanelaListarContato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastrarContato.Formularios"
+        mc:Ignorable="d"
+        Title="Listar Contato" Height="450" Width="800">
+    <Grid>
+        <Label Content="Listar Contato" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.264,-0.23" Background="White" FontSize="36" FontFamily="Arial" FontWeight="Bold"/>
+        <DataGrid x:Name="dgContato" Margin="25,61,25,13" IsReadOnly="true" AutoGenerateColumns="False" HorizontalAlignment="Center">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="268"/>
+                <DataGridTextColumn Header="Sexo" Binding="{Binding Sexo}"/>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding Email}" Width="268"/>
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
+                <DataGridTextColumn Header="Nascimento" Binding="{Binding Nascimento, ConverterCulture='pt-BR', StringFormat=dd/MM/yyyy}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
